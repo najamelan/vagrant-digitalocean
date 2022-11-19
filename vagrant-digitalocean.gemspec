@@ -16,6 +16,8 @@ Gem::Specification.new do |gem|
   gem.require_paths = ["lib"]
 
   gem.add_dependency "faraday", ">= 0.8.6"
+  gem.add_dependency "ffi", "=1.15.5"
+  gem.add_dependency "i18n", ">= 1.12.0"
   gem.add_dependency "json"
   gem.add_dependency "log4r"
 end
