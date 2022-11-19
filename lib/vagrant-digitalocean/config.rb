@@ -61,7 +61,7 @@ module VagrantPlugins
         if !key
           errors << I18n.t('vagrant_digital_ocean.config.private_key')
         elsif !File.file?(File.expand_path("#{key}.pub", machine.env.root_path))
-          errors << I18n.t('vagrant_digital_ocean.config.public_key', {
+          errors << I18n.t('vagrant_digital_ocean.config.public_key', **{
             :key => "#{key}.pub"
           })
         end
